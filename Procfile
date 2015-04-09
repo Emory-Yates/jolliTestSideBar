@@ -1,1 +1,1 @@
-web: node Brocfile.js
+web: npm run start
