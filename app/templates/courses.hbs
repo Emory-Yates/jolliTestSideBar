@@ -1,73 +1,267 @@
-<section class="row banner">
-  <div class="col-md-4 emblem resource-emblem">
-    <div class="emblem-header">
-      <h1><a href="https://mell-base.uce.auburn.edu/wconnect/ShowSchedule.awp?&Mode=GROUP&Group=POAAUL&Title=OLLI+Membership+at+Auburn+University&SubGroup=POA  ">Register for courses</a></h2>
-    </div>
-    <div class="emblem-body">
-      <a href="/public/fall-registration-form.pdf">Prefer a print-out form?</a>
-    </div>
-  </div>
-  <div class="col-md-4 emblem resource-emblem">
-    <div class="emblem-header">
-      <h1>Course listings</h1>
-    </div>
-    <div class="emblem-body">
-      <a class="resource" href="/fall-course-catalogue.pdf">
-        <i class="fa fa-file-pdf-o"></i>
-        <br />
-        Fall catalogue
-      </a>
-      <a class="resource" href="/fall-course-grid.pdf">
-        <i class="fa fa-th"></i>
-        <br />
-        Grid view
-      </a>
-      <a class="resource" href="/fall-course-descriptions.pdf">
-        <i class="fa fa-list"></i>
-        <br />
-        Descriptive view
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4 emblem resource-emblem">
-    <div class="emblem-header">
-      <h1>Materials</h1>
-    </div>
-    <div class="emblem-body">
-      <a class="resource" href="http://olliatauburn.org/coursematerials.htm">
-        <i class="fa fa-book"></i>
-        <br />
-        Course-specific materials
-      </a>
-      <a class="resource" href="https://auburn.qualtrics.com/SE/?SID=SV_8bPoCLNnfT6ZJvD">
-        <i class="fa fa-graduation-cap"></i>
-        <br />
-        Propose a course
-      </a>
-      <a class="resource" href="https://auburn.qualtrics.com/SE/?SID=SV_7Nx3c6asMFM1igR">
-        <i class="fa fa-file-powerpoint-o"></i>
-        <br />
-        Propose a Brown Bag Presentation
-      </a>
-    </div>
-  </div>
-</section>
-<section class="row">
-  <h1>Historical course listings</h1>
-  <h2>2013-2014</h2>
-  <h3>Fall 2013</h3>
-  <ul>
-    <li><a>Newspaper insert</a></li>
-  </ul>
-  <h3>Spring 2014</h3>
-  <ul>
-    <li><a>Newspaper insert</a></li>
-    <li><a>Grid view</a></li>
-    <li><a>Descriptive view</a></li>
-  </ul>
-  <h3>Summer 2014</h3>
-  <ul>
-    <li><a>Flyer</a></li>
-  </ul>
-</section>
+<!--All of the below html is put in index.html's BODY tag-->
+<script src="assets/vendor.js"></script>
+<script src="assets/jolli.js"></script>
 
+<div class="container">
+  <!--div that contains the HEADER and NAVBAR-->
+  <div id="top" class="row header-wrap">
+
+    <!--Supposed to be a shortcut for the header. Don't worry about this.-->
+    <a href="#nav-section" class="skip">Skip to Navigation</a>
+
+    <!--HEADER (top of the page containing the auburn icon and the top-right search bar)-->
+    <header role="banner">
+      <div class="logo hidden-print" onclick="window.location='http://www.auburn.edu'" title="AU Homepage" aria-label="Auburn University Homepage">
+        <img src="http://www.auburn.edu/outreach/template_files/headerLogo.png" alt="Auburn University Homepage"/>
+      </div>
+      <div class="menu-icon hidden-print" data-toggle="offcanvas">
+        <i class="icon-reorder"></i>
+      </div>
+      <div class="header-title">
+        <div class="top-links hidden-print">
+          <a href="http://www.auburn.edu/main/sitemap.php">A-Z Index</a> | <a href="http://www.auburn.edu/map">Map</a> | <a href="http://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
+        </div>
+        <form action="http://search.auburn.edu" class="search-form form-group hidden-print" method="get">
+          <div class="search-box">
+            <input type="text" name="q" id="q" role="search" accesskey="q" tabindex="1" class="search-field form-control" placeholder="Search AU..." value=""/>
+          </div>
+          <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm"/>
+          <input type="hidden" name="ie" value="utf-8"/>
+          <label for="q" class="form-control" style="position: absolute; left: -9999px; visibility: hidden;">Enter your search terms</label>
+        </form>
+        <div class="title-area">
+          <img class="visible-print" src="//cdn.auburn.edu/assets/img/header-logo-print.png" height="48" width="245" alt="Auburn University Logo"/>
+          <div class="main-heading hidden-print">
+            <a href="">Osher Lifelong Learning Institute</a>
+          </div>
+          <div class="sub-heading hidden-print">
+            <a href="http://www.auburn.edu/outreach">University Outreach</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Supposed to be a shortcut for the navbar. Don't worry about this.-->
+    <a href="#content" class="skip">Skip to Main Content</a>
+
+    <!--NAVBAR (orange bar below the header)-->
+    <nav id="nav-section" class="navbar hidden-print" role="navigation">
+      <!--"Navigate to..." pops up when the page is too small to display all the columns-->
+      <div class="navbar-brand collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        Navigate to...<span>&nbsp;</span>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav" style="width: 100%">
+          <li style="width: 16.6%">
+            <a class="olli" href="donate">Donate</a>
+          </li>
+          <li style="width: 16.6%">
+            <a class="olli" href="courses">Courses</a>
+          </li>
+          <li style="width: 16.6%">
+            <a class="olli" href="documents/bulletinboard.pdf">Newsletter</a>
+          </li>
+          <li style="width: 16.6%">
+            <a class="olli" href="calendar">Calendar</a>
+          </li>
+          <li style="width: 16.6%">
+            <a class="olli" href="contact">Contact Us</a>
+          </li>
+          <li style="width: 16.6%">
+            <a class="olli" href="about">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--This all of the PAGE CONTENT containing the sidebar and main body -->
+  <div id="content wrapper" class="row row-offcanvas row-offcanvas-left content-area">
+
+    <!--This is the SIDEBAR. It doesn't function properly, but the clients don't want it on the site :) -->
+    <!--
+    <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas">
+      <div class="sidebar-content accordion">
+        <a class="upLink" href="index.htm">OLLI</a>
+        <a href="about.htm">About</a>
+        <a href="staffleaders.htm">Staff/Leaders</a>
+        <a href="locations.htm">Locations</a>
+        <a href="socials.htm">Socials</a>
+        <a href="coursematerials.htm">Course Materials</a>
+        <a href="documents/university_privileges.pdf">University Privileges</a>
+        <a href="downloadingdocs.htm">Downloading Documents</a>
+        <a href="documents/olli_faq.pdf">FAQ</a>
+        <a href="http://tedolliau.wordpress.com/" target="new">
+          The Best of &nbsp;<strong>
+            <span style="color: #ff0000; background-color: #FFF; padding: 1px 5px 1px 5px;">TED</span>
+          </strong>
+        </a>
+        <a href="writingourlives.htm">Writing Our Lives Sampler</a>
+        <div class="orange-bar">&nbsp;</div>
+        <a href="http://www.auburn.edu/outreach">University Outreach</a>
+        <div class="orange-bar">&nbsp;</div>
+        <div align="center">
+          <a href="https://www.facebook.com/OLLIatAuburn" target="new">
+            <img class="img-responsive" src="images/facebook2.png" alt="Like us on Facebook"/>
+          </a>
+          <br/>
+          <a href="https://twitter.com/olliatauburn" target="new">
+            <img class="img-responsive" src="images/twitter.png" alt="Follow @olliatauburn"/>
+          </a>
+          <br/>
+          <a href="giving.htm" target="new">
+            <img src="images/givebutton.png" class="img-responsive" alt="Giving to OLLI"/>
+          </a>
+          <br/>
+          <a href="http://usm.maine.edu/olli/national/" target="new">
+            <img class="img-responsive" src="images/ollilogo.png" alt="OLLI"/>
+          </a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+    </div>-->
+
+    <!--This is the "MAIN" BODY-->
+    <div class="content-division col-lg-9" id="wrapper" role="main">
+      <section class="row banner">
+        <div class="col-md-4 emblem resource-emblem">
+          <div class="emblem-header">
+            <h2>
+              <a href="https://mell-base.uce.auburn.edu/wconnect/ShowSchedule.awp?&Mode=GROUP&Group=POAAUL&Title=OLLI+Membership+at+Auburn+University&SubGroup=POA  ">Register for courses</a>
+            </h2>
+          </div>
+          <div class="emblem-body">
+            <a href="/public/fall-registration-form.pdf">Prefer a print-out form?</a>
+          </div>
+        </div>
+        <div class="col-md-4 emblem resource-emblem">
+          <div class="emblem-header">
+            <h2>Course listings</h2>
+          </div>
+          <div class="emblem-body">
+            <a class="resource" href="/fall-course-catalogue.pdf">
+              <i class="fa fa-file-pdf-o"></i>
+              <br />
+              Fall catalogue
+            </a>
+            <a class="resource" href="/fall-course-grid.pdf">
+              <i class="fa fa-th"></i>
+              <br />
+              Grid view
+            </a>
+            <a class="resource" href="/fall-course-descriptions.pdf">
+              <i class="fa fa-list"></i>
+              <br />
+              Descriptive view
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 emblem resource-emblem">
+          <div class="emblem-header">
+            <h2>Materials</h2>
+          </div>
+          <div class="emblem-body">
+            <a class="resource" href="http://olliatauburn.org/coursematerials.htm">
+              <i class="fa fa-book"></i>
+              <br />
+              Course-specific materials
+            </a>
+            <a class="resource" href="https://auburn.qualtrics.com/SE/?SID=SV_8bPoCLNnfT6ZJvD">
+              <i class="fa fa-graduation-cap"></i>
+              <br />
+              Propose a course
+            </a>
+            <a class="resource" href="https://auburn.qualtrics.com/SE/?SID=SV_7Nx3c6asMFM1igR">
+              <i class="fa fa-file-powerpoint-o"></i>
+              <br />
+              Propose a Brown Bag Presentation
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Historical course listings</h2>
+        <h2>2013-2014</h2>
+        <h3>Fall 2013</h3>
+        <ul>
+          <li>
+            <a>Newspaper insert</a>
+          </li>
+        </ul>
+        <h3>Spring 2014</h3>
+        <ul>
+          <li>
+            <a>Newspaper insert</a>
+          </li>
+          <li>
+            <a>Grid view</a>
+          </li>
+          <li>
+            <a>Descriptive view</a>
+          </li>
+        </ul>
+        <h3>Summer 2014</h3>
+        <ul>
+          <li>
+            <a>Flyer</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!--Part of the page that is under the "main" body-->
+    <div class="row footer-wrap hidden-print" id="newFooter">
+      <!--footer is the part of the page in blue (between the background image and bottom text)-->
+      <div id="footer">
+        <div class="footSection">
+          <div class="row links">
+            <!--<a href="https://www.facebook.com/OLLIatAuburn">
+              <div class="col-md-2 links-fb">
+                Facebook
+              </div>
+            </a>
+            <a href="https://twitter.com/OLLIatAuburn">
+              <div class="col-md-2 links-tw">
+                Twitter
+              </div>
+            </a>
+            <a href="http://tedolliau.wordpress.com/">
+              <div class="col-md-2 links-ted">
+                TED
+              </div>
+            </a>
+            <a href="http://osher.net">
+              <div class="col-md-2 links-olli">
+                OLLI
+              </div>
+            </a>
+            <a href="/faqs">
+              <div class="col-md-2 links-faq">
+                FAQ
+              </div>
+            </a>
+            <a href="/newsletter.pdf">
+              <div class="col-md-2 links-feat">
+                News
+              </div>
+            </a>-->
+          </div>
+        </div>
+      </div>
+      <!--Text at the bottom of the page-->
+      <div class="subfooter" role="contentinfo">
+        Osher Lifelong Learning Institute at Auburn University | 301 O.D. Smith Hall | Auburn, Alabama 36849<br/>
+        Phone: (334) 844-3102 - or - (334) 844-3105 | Fax: (334) 844-3101 |
+        <script type="text/javascript">
+          emailE = 'auburn.edu'; emailE = ('olli' + '@' + emailE); document.write("<a href='mailto:" + emailE + "'>" + emailE + "</a>");
+        </script>
+        | <a href="http://www.auburn.edu/privacy">Privacy</a> | <a href="http://www.auburn.edu/oit/it_policies/copyright_regulations.php">
+          Copyright &copy; 2006&ndash;<script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /container -->

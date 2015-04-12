@@ -1,0 +1,17 @@
+@import 'variables';
+
+.btn {
+  background: white;
+  border: 1px solid $thisisblue;
+  color: $thisisblue;
+
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+
+  &:hover {
+    background: $thisisblue;
+    border: 1px solid white;
+    color: white;
+  }
+}
