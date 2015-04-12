@@ -8,27 +8,26 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node Brocfile.js && ember serve --environment=production --port=${PORT}",
+    "start": "ember serve --environment=production --port=${PORT}",
     "build": "ember build",
     "test": "ember test",
     "postinstall": "bower install"
   },
-  "repository": "https://github.com/smockle/jolli",
+  "repository": "https://github.com/donlink1/jolliTest",
   "engines": {
-    "node": ">= 0.10.x",
-    "npm": "2.5.1"
+    "node": ">= 0.10.0"
   },
-  "author": "Clay Miller <clay@smockle.com>",
+  "author": "Clay Miller <clay@smockle.com>, Lloyd Moore",
   "license": "ISC",
   "devDependencies": {
-    "body-parser": "^1.12.2",
-    "broccoli-asset-rev": "^2.0.2",
+    "body-parser": "^1.2.0",
+    "broccoli-asset-rev": "0.3.1",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
-    "broccoli-imagemin": "git+https://github.com/songsterr/broccoli-imagemin#develop",
+    "broccoli-imagemin": "songsterr/broccoli-imagemin#develop",
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-sass": "^0.5.0",
+    "broccoli-sass": "^0.3.3",
     "broccoli-static-compiler": "^0.2.1",
-    "connect-restreamer": "^1.0.2",
+    "connect-restreamer": "^1.0.1",
     "ember-cli": "0.1.2",
     "ember-cli-content-security-policy": "0.3.0",
     "ember-cli-ic-ajax": "0.1.1",
@@ -36,22 +35,20 @@
     "ember-cli-qunit": "0.1.0",
     "ember-data": "1.0.0-beta.10",
     "ember-export-application-global": "^1.0.0",
-    "express": "^4.12.3",
-    "glob": "^5.0.3",
-    "handlebars": "3.0.1"
+    "express": "^4.8.5",
+    "glob": "^4.0.5"
   },
   "dependencies": {
-    "body-parser": "^1.12.2",
+    "body-parser": "^1.2.0",
     "bower": "^1.3.12",
-    "broccoli-ember-hbs-template-compiler": "^1.6.1",
+    "broccoli-ember-hbs-template-compiler": "^1.7.0",
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-sass": "^0.5.0",
+    "broccoli-sass": "^0.3.3",
     "broccoli-static-compiler": "^0.2.1",
-    "connect-restreamer": "^1.0.2",
-    "ember-cli": "^0.1.2",
-    "ember-data": "1.0.0-beta.12",
-    "express": "^4.12.3",
-    "glob": "^5.0.3",
-    "handlebars": "3.0.1"
+    "connect-restreamer": "^1.0.1",
+    "ember-cli": "0.1.2",
+    "ember-data": "^1.0.0-beta.12",
+    "express": "^4.8.5",
+    "glob": "^4.0.5"
   }
 }
