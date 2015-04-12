@@ -16,7 +16,7 @@
   "repository": "https://github.com/donlink1/jolliTest",
   "engines": {
     "node": ">= 0.10.0",
-    "npm": "2.5.1"
+    "npm": "2.1.12"
   },
   "author": "Clay Miller <clay@smockle.com>, Lloyd Moore",
   "license": "ISC",
