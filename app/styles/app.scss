@@ -10,7 +10,7 @@ $fa-font-path: "/assets/fonts" !default;
 @font-face{font-family:'Open Sans';font-style:normal!important;font-weight:400!important;src:local("Open Sans"),local("OpenSans"),url("//themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format("woff")}
 *:not([class^="icon-"]):not([class*=" icon-"]){font-family:"Open Sans",Arial,Verdana,sans-serif}
 
-
+/**Contains css that will be used across all the hbs files**/
 
 /******General Page*******/
 p { margin:4px 0 12px 0 !important; }
