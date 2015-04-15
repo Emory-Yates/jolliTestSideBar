@@ -20,8 +20,8 @@ Sparse description of each: Git is a version control solution. Node.js is a Java
 
 To download the code and set up the environment:
 ````
-git clone https://github.com/smockle/jolli.git
-cd jolli
+git clone https://github.com/donlink1/jolliTest.git
+cd jolliTest
 npm install
 bower install
 ````
