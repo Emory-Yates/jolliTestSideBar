@@ -7,13 +7,13 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'default-src': "*",
-      'script-src': "*",
-      'font-src': "*",
-      'connect-src': "*",
-      'img-src': "*",
-      'style-src': "*",
-      'media-src': "*"
+      'default-src': "* 'unsafe-inline' 'unsafe-eval'",
+      'script-src': "* 'unsafe-inline' 'unsafe-eval'",
+      'font-src': "* 'unsafe-inline' 'unsafe-eval'",
+      'connect-src': "* 'unsafe-inline' 'unsafe-eval'",
+      'img-src': "* 'unsafe-inline' 'unsafe-eval'",
+      'style-src': "* 'unsafe-inline' 'unsafe-eval'",
+      'media-src': "* 'unsafe-inline' 'unsafe-eval'"
     },
     EmberENV: {
       FEATURES: {
