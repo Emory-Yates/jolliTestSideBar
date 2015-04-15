@@ -1,205 +1,1 @@
-<!--All of the below html is put in index.html's BODY tag-->
-<script src="assets/vendor.js"></script>
-<script src="assets/jolli.js"></script>
-
-<div class="container">
-  <!--div that contains the HEADER and NAVBAR-->
-  <div id="top" class="row header-wrap">
-
-    <!--Supposed to be a shortcut for the header. Don't worry about this.-->
-    <a href="#nav-section" class="skip">Skip to Navigation</a>
-
-    <!--HEADER (top of the page containing the auburn icon and the top-right search bar)-->
-    <header role="banner">
-      <div class="logo hidden-print" onclick="window.location='https://www.auburn.edu'" title="AU Homepage" aria-label="Auburn University Homepage">
-        <img src="https://www.auburn.edu/outreach/template_files/headerLogo.png" alt="Auburn University Homepage"/>
-      </div>
-      <div class="menu-icon hidden-print" data-toggle="offcanvas">
-        <i class="icon-reorder"></i>
-      </div>
-      <div class="header-title">
-        <div class="top-links hidden-print">
-          <a href="https://www.auburn.edu/main/sitemap.php">A-Z Index</a> | <a href="https://www.auburn.edu/map">Map</a> | <a href="https://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
-        </div>
-        <form action="https://search.auburn.edu" class="search-form form-group hidden-print" method="get">
-          <div class="search-box">
-            <input type="text" name="q" id="q" role="search" accesskey="q" tabindex="1" class="search-field form-control" placeholder="Search AU..." value=""/>
-          </div>
-          <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm"/>
-          <input type="hidden" name="ie" value="utf-8"/>
-          <label for="q" class="form-control" style="position: absolute; left: -9999px; visibility: hidden;">Enter your search terms</label>
-        </form>
-        <div class="title-area">
-          <img class="visible-print" src="//cdn.auburn.edu/assets/img/header-logo-print.png" height="48" width="245" alt="Auburn University Logo"/>
-          <div class="main-heading hidden-print">
-            <a href="">Osher Lifelong Learning Institute</a>
-          </div>
-          <div class="sub-heading hidden-print">
-            <a href="https://www.auburn.edu/outreach">University Outreach</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--Supposed to be a shortcut for the navbar. Don't worry about this.-->
-    <a href="#content" class="skip">Skip to Main Content</a>
-
-    <!--NAVBAR (orange bar below the header)-->
-    <nav id="nav-section" class="navbar hidden-print" role="navigation">
-      <!--"Navigate to..." pops up when the page is too small to display all the columns-->
-      <div class="navbar-brand collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        Navigate to...<span>&nbsp;</span>
-      </div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav" style="width: 100%;">
-          <li style="width: 16.6%">
-            <a class="olli" href="donate">Donate</a>
-          </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="courses">Courses</a>
-          </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="documents/bulletinboard.pdf">Newsletter</a>
-          </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="calendar">Calendar</a>
-          </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="contact">Contact Us</a>
-          </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="about">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <!--This all of the PAGE CONTENT containing the sidebar and main body -->
-  <div id="content wrapper" class="row row-offcanvas row-offcanvas-left content-area">
-
-    <!--This is the SIDEBAR. It doesn't function properly, but the clients don't want it on the site :) -->
-    <!--
-    <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas">
-      <div class="sidebar-content accordion">
-        <a class="upLink" href="index.htm">OLLI</a>
-        <a href="about.htm">About</a>
-        <a href="staffleaders.htm">Staff/Leaders</a>
-        <a href="locations.htm">Locations</a>
-        <a href="socials.htm">Socials</a>
-        <a href="coursematerials.htm">Course Materials</a>
-        <a href="documents/university_privileges.pdf">University Privileges</a>
-        <a href="downloadingdocs.htm">Downloading Documents</a>
-        <a href="documents/olli_faq.pdf">FAQ</a>
-        <a href="https://tedolliau.wordpress.com/" target="new">
-          The Best of &nbsp;<strong>
-            <span style="color: #ff0000; background-color: #FFF; padding: 1px 5px 1px 5px;">TED</span>
-          </strong>
-        </a>
-        <a href="writingourlives.htm">Writing Our Lives Sampler</a>
-        <div class="orange-bar">&nbsp;</div>
-        <a href="https://www.auburn.edu/outreach">University Outreach</a>
-        <div class="orange-bar">&nbsp;</div>
-        <div align="center">
-          <a href="https://www.facebook.com/OLLIatAuburn" target="new">
-            <img class="img-responsive" src="images/facebook2.png" alt="Like us on Facebook"/>
-          </a>
-          <br/>
-          <a href="https://twitter.com/olliatauburn" target="new">
-            <img class="img-responsive" src="images/twitter.png" alt="Follow @olliatauburn"/>
-          </a>
-          <br/>
-          <a href="giving.htm" target="new">
-            <img src="images/givebutton.png" class="img-responsive" alt="Giving to OLLI"/>
-          </a>
-          <br/>
-          <a href="https://usm.maine.edu/olli/national/" target="new">
-            <img class="img-responsive" src="images/ollilogo.png" alt="OLLI"/>
-          </a>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-      </div>
-    </div>-->
-
-    <!--This is the "MAIN" BODY-->
-    <div class="content-division col-lg-9" id="wrapper" role="main">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>OLLI at Auburn Frequently Asked Questions (FAQ)</h2>
-
-          <div class="panel-group" id="accordion">
-            {{#each model}}
-            <div class="panel panel-default">
-              <a class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse{{unbound id}}">
-                <h4 class="panel-title question">
-                  {{question}}
-                </h4>
-              </a>
-              <div id="collapse{{unbound id}}" class="panel-collapse collapse">
-                <div class="panel-body">
-                  {{answer}}
-                </div>
-              </div>
-            </div>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Part of the page that is under the "main" body-->
-    <div class="row footer-wrap hidden-print" id="newFooter">
-      <!--footer is the part of the page in blue (between the background image and bottom text)-->
-      <div id="footer">
-        <div class="footSection">
-          <div class="row links">
-            <!--<a href="https://www.facebook.com/OLLIatAuburn">
-              <div class="col-md-2 links-fb">
-                Facebook
-              </div>
-            </a>
-            <a href="https://twitter.com/OLLIatAuburn">
-              <div class="col-md-2 links-tw">
-                Twitter
-              </div>
-            </a>
-            <a href="https://tedolliau.wordpress.com/">
-              <div class="col-md-2 links-ted">
-                TED
-              </div>
-            </a>
-            <a href="https://osher.net">
-              <div class="col-md-2 links-olli">
-                OLLI
-              </div>
-            </a>
-            <a href="/faqs">
-              <div class="col-md-2 links-faq">
-                FAQ
-              </div>
-            </a>
-            <a href="/newsletter.pdf">
-              <div class="col-md-2 links-feat">
-                News
-              </div>
-            </a>-->
-          </div>
-        </div>
-      </div>
-      <!--Text at the bottom of the page-->
-      <div class="subfooter" role="contentinfo">
-        Osher Lifelong Learning Institute at Auburn University | 301 O.D. Smith Hall | Auburn, Alabama 36849<br/>
-        Phone: (334) 844-3102 - or - (334) 844-3105 | Fax: (334) 844-3101 |
-        <script type="text/javascript">
-          emailE = 'auburn.edu'; emailE = ('olli' + '@' + emailE); document.write("<a href='mailto:" + emailE + "'>" + emailE + "</a>");
-        </script>
-        | <a href="https://www.auburn.edu/privacy">Privacy</a> | <a href="https://www.auburn.edu/oit/it_policies/copyright_regulations.php">
-          Copyright &copy; 2006&ndash;<script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /container -->
+<div class="row">  <div class="col-md-12">    <h2>OLLI at Auburn Frequently Asked Questions (FAQ)</h2>    <div class="panel-group" id="accordion">      {{#each model}}      <div class="panel panel-default">        <a class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse{{unbound id}}">          <h4 class="panel-title question">            {{question}}          </h4>        </a>        <div id="collapse{{unbound id}}" class="panel-collapse collapse">          <div class="panel-body">            {{answer}}          </div>        </div>      </div>      {{/each}}    </div>  </div></div><!-- How do I find out about upcoming outings and day trips?Visit our website, www.olliatauburn.org to view the OLLI Bulletin Board, our weekly newsletter that includes information about travel opportunities.<h4 class="question">Where do I go to sign up for a social?</h4>Simply email us at olli@auburn.edu or call our office at 334‐844‐5100, 334‐844‐3102, or 334‐844‐3105.Specific details about our upcoming social events are posted on our website, www.olliatauburn.org. Please register by the deadline in order to guarantee your reservation for the event.<h4 class="question">Who do I contact about auditing a course at Auburn University?</h4>Visit our website for details concerning the auditing process,http://www.olliatauburn.org/documents/university_privileges.pdf<h4 class="question">How do I get an Auburn University library card?</h4>Visit our website for details about how to obtain a library card,http://www.olliatauburn.org/documents/university_privileges.pdf<h4 class="question">What are the Alumni Courses and how can I get involved?</h4>To learn more about auditing opportunities for members of the AU Alumni Association, email Linda Shook, OLLI Director, at olli@auburn.edu.<h3>General Information</h3><h4 class="question">When is the information mailed out to current members about the upcoming semester?￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼</h4>Information is mailed upon request via the postal service at least three weeks prior to the start of the term.<h4 class="question">How do I get added to the mailing list?</h4>To add your name to the OLLI mailing list, email us at olli@auburn.edu or call us at 334‐ 844‐5100, 334‐844‐3102, or 334‐844‐3105.<h4 class="question">How do I get information e‐mailed instead of “snail mailed?”</h4>If you would like to receive your OLLI information via email, please send a message to us at olli@auburn.edu or call us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐3105 and ask to receive email information electronically.<h4 class="question">What courses do you currently offer?</h4>Current OLLI course listings can be found at http://www.olliatauburn.org/courses/index.php . This site includes a newspaper insert copy, class grid, and a text listing that will allow you to view current courseofferings. Registration cannot be completed at this site.<h4 class="question">What are my options with academic fees?</h4>Participants, who just want to be general members and not take classes, can choose the current academic year “OLLI Membership Dues ONLY” option.The best deal for those wanting to take courses for the full academic year is the “Fall, Winter, and Spring OLLI Courses and Membership Dues” option since the total amount paid will be less than if you just register for “Fall OLLI Courses Only and Membership Dues,” “Winter OLLI Courses Only and Membership Dues” and then “Spring OLLI Courses Only and Membership Dues.”There are also additional options to accommodate those who may be unable to attend courses at certain times of the year.Membership dues should only be paid once per academic year.<h4 class="question">Membership Dues ONLY versus Academic fees & Membership Dues</h4>All OLLI at Auburn members pay membership dues. Membership dues allow a member to participate in social events, the Leahy Lecture and other lectures during the year, a￼￼￼￼￼￼￼￼10% discount at the AU Bookstore, Tiger Transit privileges, the opportunity to obtain an AU ID card, an AU Library card, and to audit Auburn University courses, and much more.To participate in academic courses, academic fees are charged as follows:The cost for one term is $115 ($140 including dues); the cost for two terms is $165 ($190 including dues); the cost for three terms is $200 ($225 including dues).<h3>Registering</h3><h4 class="question">What are my options for registering?</h4>There are four convenient ways to register for OLLI:Call (334) 844‐5100, (334) 844‐3102, or (334) 844‐3105; Web www.olliatauburn.org to register onlineFax (334) 844‐3101; Mail OLLI at Auburn, 301 O.D. Smith Hall, Auburn, AL 36849‐5680**A registration form can be found in our newspaper insert or online at http://www.olliatauburn.org/documents/registration.pdf .Online registration can be done by first paying for Academic fees and Membership Dues using a credit card. Once this payment is processed, you will be sent a confirmation e‐ mail that will give you a link to view the current course offerings. If it is not received, you can e‐mail us at olli@auburn.edu or call us at 334‐844‐5100, 334‐833‐3102, or 334‐844‐ 3105 to be manually sent a copy.Registration cannot be considered completed until payment is received. Course space is available on a first come, first served basis.** Checks MUST be made out to “Auburn University” in order to be processed. Checks not made out to Auburn University may be returned and not processed.<h4 class="question">How do I create a new user account?</h4>Participants who have never taken a class through our office will need to start a new account. Our system is separate from the rest of the University, so it is not required that a participant be a student in order to register. Also, Auburn University students/faculty/staff are not automatically included in our records.Click on the program that you are interested in and choose “Enroll Yourself” then “Create Account.”<h4 class="question">I’ve been an OLLI member before. How do I get a password?</h4>1) Past participants who have not registered online previously can enter the following:E‐mail Address Field: Type the e‐mail address that we have listed in our records. Password Field: Type the 1st letter of your first name (lowercase), the 1st letter of￼￼￼￼￼your last name (lowercase), then your zip code. This is considered your “temporary password.”For example: John Smith from Auburn, AL 36830 would type js36830 in the “Password” field.Once you type in your temporary password, you will be able to choose what youwant your permanent password to be.2) Past participants who have registered online previously and do not remembertheir password can do one of the following:a) Once you click “Enroll Yourself,” you will have the option to click “Forgot Password” and be e‐mailed a link that will allow you to change your permanent password. This e‐mail will be sent within the same business day.b) You can call our office at 334‐844‐5100, 334‐844‐3102, or 334‐844‐3105 (Monday‐Friday from 7:45 AM – 4:45 PM) or e‐mail us at olli@auburn.edu to have your password reset. Once your password is reset, you will be able to use your temporary password (see above) to set up a new permanent password.If you are not sure what we have listed in our system as your name or e‐mail address, you can either call us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐3105 (Monday‐Friday from 7:45 AM – 4:45 PM) or e‐mail us at olli@auburn.edu .For security purposes, OPCE does not have the ability to view any passwords.<h4 class="question">Why does the “forgot password?” area keep on telling me that you don’t have a record for me?</h4>If you have never taken any classes with us before, then we do not have your information in our records. Click the back button and then click on the “Create Account” area.If you are a past participant, then you may want to double‐check the information that you are typing in to the required fields since they must match what we have on file in order to locate your record. (See above for information for those who have and have not registered online previously)<h4 class="question">Why is my new password not being accepted now that I’m logged in?</h4>If you are having difficulty typing in your new password, be sure that you are using between 6‐10 characters.If you are sent to the screen that reminds you how long passwords should be, be sure to either click on “return to previous page” or the back button. If an error message pops￼￼￼￼up, you will need to click on the refresh button in Mozilla Firefox or go to View | Refresh in Internet Explorer.<h4 class="question">Why does my computer say that this website is insecure?</h4>Our online registration site web address begins with “https” to show it is a secure site. If your internet browser is still saying that the site is insecure, this is due to your individual browser/security setting through your computer and can usually be changed by editing your preferences.<h4 class="question">How do I pay for academic fees and/or membership dues online?</h4>Online registration and payment is available to those who meet the following criteria:a) Are members who just want to pay for this academic year’s membership dues.b) Are paying for the Fall, Winter & Spring academic fees & membership dues for the current academic year.c) Want to pay using a credit cardd) Are signing up for another academic fees and membership dues option for thefirst time. **** If you have previously registered for another academic fee and membership dues class this academic year or are currently just a social member, please call us at 334‐ 844‐5100, 334‐844‐3102, or 334‐844‐3105 or mail in payment to register since membership dues are automatically included in these fees. Membership dues should only be paid once per academic year.1. Go to http://www.olliatauburn.org/onlineregistration/index.php to choose whether or not you want to just pay for membership dues (will not be eligible to attend any courses) or want to choose a course fee & member dues option. Click on the appropriate link depending on what you want to do.2. Add to Enrollment Card ‐ click the “Enroll Yourself” button on the Course Information page to start the registration process.3. Logon – Type your e‐mail address and password if you are a past participant. If you have never taken a class with us, be sure to click the “Create Account” option. Note: if you're already logged on, this step will be skipped.4. Register for Selected Courses ‐ click the “Finish Registration” button to continue the registration process. (Those who are signing up for a academic fees & membership dues course will note that the membership dues are automatically included and will not need to be paid again for the remaining academic year.)￼￼￼5. Make Payment ‐ enter your payment information then click the Submit Payment button.***6. Registration Confirmed ‐ the Registration Confirmation page now opens notifying you that you are enrolled in the course(s). A confirmation email with the registration specifics is also sent to your email address. At this time, you can safely log off the system.7. Once you have received the confirmation e‐mail, you will be sent a link to sign up for the current semester’s courses. This e‐mail should be sent within the same business day. If it is not received, you can e‐mail us at olli@auburn.edu or call us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐3105 to be manually sent a copy.*** Important Note for those paying by Credit CardThe Wait page will be displayed to you while the system is waiting for credit card approval. DO NOT move away from this page (click your Back button, select another URL, etc.) until the process is completed. If you do, the approval process is aborted and you WILL NOT be enrolled in the course. If your registration process is aborted for any reason, you will need to call us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐ 3105 to finalize your registration.<h4 class="question">Which methods of payment do you accept online?</h4>We only accept MasterCard, Visa, Discover, and American Express for payment when registering online.To pay using a check**, cash, money order, or other accepted payment methods, please either fax your registration form and paperwork to 334‐844‐3101, mail us your registration form and paperwork, or call us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐ 3105 (Monday‐Friday from 7:45 AM – 4:45 PM) to register over the phone.**Checks MUST be made out to “Auburn University” in order to be processed. Checks not made out to Auburn University may be returned and not processed.<h4 class="question">How do I register myself and someone else?</h4>Group registration is possible online, however, you may find it easier to call us at 334‐ 844‐5100, 334‐844‐3102, or 334‐844‐3105 (Monday‐Friday from 7:45 AM – 4:45 PM) or mail the registration forms to our office.To register someone else online, you will need to select “Add Another Person to...” button after you have logged in and either create a new account or input that person’s e‐mail and password if they are a repeat customer.￼￼￼￼<h4 class="question">How do I register for courses online?</h4>Participants who register online for the current semester’s academic fees & the annual membership dues will automatically be sent an e‐mail that includes the link to register for courses. This e‐mail should be sent within one business day. If it is not received, you can e‐mail us at olli@auburn.edu or call us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐ 3105 to be sent another copy.Participants who have previously paid for the current semester’s academic fees & the annual membership dues will be automatically sent an e‐mail with the course link attached once courses are available for registration.Please note that online course registration cannot be completed without being sent the link. We request that those who have been sent the link not forward or share this information.1. Click on link for current semester’s courses2. Add to Enrollment Card ‐ click the “Enroll Yourself” button on the Course Information page to start the registration process.3. Logon – Type your e‐mail address and password.4. Add More Courses ‐ if you want to register for more than one OLLI course at a time, click the “Add More Courses button” and repeat steps 2 and 4 until completed.5. Register for Selected Courses ‐ click the “Finish Registration” button to continue the registration process.6. Registration Confirmed ‐ the Registration Confirmation page now opens notifying you that you are enrolled in the course(s). A confirmation email with the registration specifics is also sent to your email address. At this time, you can safely log off the system.Even though there are no fees involved with OLLI Courses, if registration is not successfully completed by clicking on "Finish Registration", those classes will not be added nor will our office be notified. If you are not sure whether or not your registration was successful, you can contact us at 334‐844‐5100, 334‐844‐3102, or 334‐844‐3105 (Monday‐Friday from 7:45 AM – 4:45 PM) or e‐mail us at olli@auburn.edu .<h4 class="question">When adding more courses, why am I sent to the main OPCE course page instead of just the current semester’s OLLI Courses?</h4>Internet Explorer is the recommended browser to use the multi‐course registration procedure. Other browsers may sometimes have issues with the multi‐course registration system. For example, sometimes when adding more courses and using￼￼￼Mozilla Firefox, you will be sent to the main OPCE course page instead of the current semester's OLLI Courses.<h4 class="question">What is the cancellation policy if I am unable to attend?</h4>The membership annual dues ($25) are non‐refundable. If you are unable to attend a term for which you have already paid, notify the office before the term begins. All cancellation requests must be received in writing.OLLI Refund Guidelines.1. Membership dues of $25 are non‐refundable.2. No refunds after classes begin for a term with the exception for hardship cases,such as: relocation, death, illness (including illness of family member) or othercatastrophic event.3. If you are unable to attend a term for which you have already paid, we ask thatyou notify the office in writing before the term begins.4. If you pay for three terms and you are unable to attend, any refund will be basedon the cost per term amount. The same proration would occur if a participant paid for two terms and needed to cancel one of the terms.Example: Member pays academic fees for three terms at discounted rate of $200 plus $25 membership dues ($225 total). If the member drops to two terms the cost would be $165 two terms academic fees plus $25 membership dues or $190 total. Refund for cancelling one term is $25. If member drops to one term, the cost would be $115 one term academic fees plus $25 membership dues or $140 total. Refund for cancelling two terms is $50.5. Requests for refunds should be submitted in writing.<h4 class="question">How can I find out what courses I'm registered in or have taken?</h4>To see a list of courses in which you are enrolled or have attended, log in using your e‐ mail address and password. Once you are logged in, click on the “My Class History” option on the left‐hand side. You will then have the following options: Upcoming Courses ‐ view a list of your upcoming courses with dates and locations Current Courses ‐ view a list of any courses you are currently attending Completed Courses ‐ view a list of completed courses with hours/CEUs(if applicable)/fees￼￼ -->
