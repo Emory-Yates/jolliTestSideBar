@@ -7,13 +7,13 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' use.typekit.net",
-      'font-src': "'self' data:",
-      'connect-src': "'self'",
-      'img-src': "'self' www.auburn.edu cdn.auburn.edu p.typekit.net olliatauburn.org",
-      'style-src': "'self' 'unsafe-inline' use.typekit.net",
-      'media-src': "'self'"
+      'default-src': "*",
+      'script-src': "*",
+      'font-src': "*",
+      'connect-src': "*",
+      'img-src': "*",
+      'style-src': "*",
+      'media-src': "*"
     },
     EmberENV: {
       FEATURES: {
