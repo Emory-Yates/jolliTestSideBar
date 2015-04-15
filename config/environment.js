@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'jolli',
+    modulePrefix: 'jolliTest',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
