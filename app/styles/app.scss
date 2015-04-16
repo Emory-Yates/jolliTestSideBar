@@ -52,14 +52,14 @@ ul.breadcrumb li{background:0!important;padding:0}
 
 
 /***********Header*********/
-.header-wrap{background:#03244d!important;display:block}
+.header-wrap{background: none !important;;display:block}
 .header-wrap header{display:block!important;min-height:110px!important;padding:15px 0 0 0!important;position:relative}
 .header-logo{background:url("https://cdn.auburn.edu/assets/img/header-logo-mobile.png") center center no-repeat!important;cursor:pointer!important;height:36px!important;margin:0 auto 15px auto!important;width:199px}
 .header-logo img{display:none}
 .search-icon{color:#fff!important;cursor:pointer!important;display:block!important;font-size:20px!important;padding:10px!important;position:absolute!important;right:4px!important;top:13px}
 .header-title{font-size:12px}
 .top-links{color:#fff!important;display:none!important;padding:3px 0!important;text-align:center}
-.top-links a{color:#fff!important;padding:0 3px}
+.top-links a{padding:0 3px}
 .title-area{text-align:center}
 .main-heading{color:#fff!important;display:block!important;font-size:20px}
 .sub-heading{color:#fff!important;display:block!important;font-size:16px!important;padding:5px 0}
@@ -72,8 +72,8 @@ input.search-field{border-radius:0!important;font-size:12px!important;line-heigh
 /************Navbar*******/
 .header-navbar li{background:0!important;margin:0!important;padding:0}
 .header-wrap nav{background-color:#dd550c!important;border:0!important;border-bottom:3px solid #f68026!important;border-radius:0!important;border-right:1px solid #f68026!important;margin:0!important;min-height:0!important;padding:0}
-.header-wrap nav .header-navbar-collapse{padding:0}
-.header-wrap nav .nav{font-size:0!important;margin:0!important;padding:0}
+.header-wrap nav .header-navbar-collapse{padding:0;display: inline !important;}
+.header-wrap nav .nav{font-size:0!important;margin:0!important;padding:0;height: 28px !important;overflow: hidden !important;}
 .header-wrap nav .nav>li{display:block!important;font-size:14px!important;margin:0}
 .header-wrap nav .nav>li>a{background:#dd550c!important;border-left:1px solid #f68026!important;color:#fff!important;font-size:12px!important;margin:0!important;padding:10px 20px!important;text-transform:uppercase}
 .header-wrap nav .nav>li>a:hover{background:#f68026!important;color:#fff!important;text-decoration:none}
@@ -83,6 +83,8 @@ input.search-field{border-radius:0!important;font-size:12px!important;line-heigh
 .header-wrap .header-navbar-toggle{border:0!important;border-radius:0!important;padding:6px 12px!important;top:1px}
 .header-wrap .header-navbar-toggle:hover,.header-wrap .header-navbar-toggle:focus{background-color:#f68026}
 .header-wrap .header-navbar-nav a:hover{text-decoration:none}
+.navbar-nav li {width: 16.66666666666666%;}
+.navbar-nav li a {position: relative; bottom: 5px;}
 .header-wrap .header-navbar-nav>.open>a,.header-wrap .header-navbar-nav>.open>a:hover,.header-wrap .header-navbar-nav>.open>a:focus{background-color:#f68026 !important;color:#fff!important;outline:0}
 .header-wrap .dropdown-menu>li.nav-header,.header-wrap .dropdown-menu>li>a{padding:10px 20px}
 .header-wrap .dropdown-menu>li>a:hover,.header-wrap .dropdown-menu>li>a:focus{background-color:#dd550c !important;color:#fff!important;outline:0}
@@ -384,7 +386,7 @@ ul#contact-pills li a {border:none!important;}
   
 /*Portrait Tablets*/
 @media(min-width:768px){
-body{background:#f4f4f4 url("https://cdn.auburn.edu/assets/img/body-background2.png") top center repeat-x}
+body{background:#f4f4f4 url("https://cdn.auburn.edu/assets/img/body-background2.png") top center repeat-x !important}
 .header-wrap{background:transparent}
 .header-wrap header{padding:0}
 .header-logo{background:0!important;height:75px!important;left:0!important;position:absolute!important;top:22px!important;width:203px}

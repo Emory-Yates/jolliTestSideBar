@@ -6,9 +6,57 @@
   /*.view-about .row {
   padding: 0px; !important
   }*/
+  .nav {
+  padding: 0 !important;
+  }
+  .nav li {
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+  ul li {
+  background: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+  .content-division {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .container {
+  text-align: center;
+  padding-right: 0px; !important
+  padding-left: 0px; !important
+  }
+  .olliBoardParent {
+  float: left;
+  width: 50%;
+  margin-top: 29px;
+  }
+  /**.olliBoardPicture {
+  float: left;
+  width: 50%;
+  }
+  .about {
+  float: right;
+  width: 50%;
+  }**/
+  .row-staff {
+  float: right;
+  width: 50%;
   .row {
-  margin-left: 0px !imprtant;
-  margin-right: 0px !imprtant;
+  margin-left: 0px;
+  margin-right: 0px;
+  } !important
+  }
+  .staffText {
+  text-align: left; 
+  width: 100%; 
+  max-width: 100% !important; 
+  margin-right: 10px; 
+  padding-left: 20px;
+  }
+  .staff-member-info {
+  display: block !important; 
   }
 </style>
 
@@ -21,17 +69,20 @@
 
     <!--HEADER (top of the page containing the auburn icon and the top-right search bar)-->
     <header role="banner">
-      <div class="logo hidden-print" onclick="window.location='https://www.auburn.edu'" title="AU Homepage" aria-label="Auburn University Homepage">
-        <img src="https://www.auburn.edu/outreach/template_files/headerLogo.png" alt="Auburn University Homepage"/>
+      <div class="logo hidden-print" onclick="window.location='http://www.auburn.edu'" title="AU Homepage" aria-label="Auburn University Homepage">
+        <img src="http://www.auburn.edu/outreach/template_files/headerLogo.png" alt="Auburn University Homepage"/>
       </div>
       <div class="menu-icon hidden-print" data-toggle="offcanvas">
         <i class="icon-reorder"></i>
       </div>
+      <div class="search-icon hidden-print">
+        <i class="icon-search"></i>
+      </div>
       <div class="header-title">
         <div class="top-links hidden-print">
-          <a href="https://www.auburn.edu/main/sitemap.php">A-Z Index</a> | <a href="https://www.auburn.edu/map">Map</a> | <a href="https://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
+          <a href="http://www.auburn.edu/main/sitemap.php">A-Z Index</a> | <a href="http://www.auburn.edu/map">Map</a> | <a href="http://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
         </div>
-        <form action="https://search.auburn.edu" class="search-form form-group hidden-print" method="get">
+        <form action="http://search.auburn.edu" class="search-form form-group hidden-print" method="get">
           <div class="search-box">
             <input type="text" name="q" id="q" role="search" accesskey="q" tabindex="1" class="search-field form-control" placeholder="Search AU..." value=""/>
           </div>
@@ -45,7 +96,7 @@
             <a href="">Osher Lifelong Learning Institute</a>
           </div>
           <div class="sub-heading hidden-print">
-            <a href="https://www.auburn.edu/outreach">University Outreach</a>
+            <a href="http://www.auburn.edu/outreach">University Outreach</a>
           </div>
         </div>
       </div>
@@ -61,23 +112,23 @@
         Navigate to...<span>&nbsp;</span>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav" style="width: 100%">
-          <li style="width: 16.6%">
+        <ul class="nav navbar-nav" style="width: 100%; text-align: center;">
+          <li>
             <a class="olli" href="donate">Donate</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="courses">Courses</a>
           </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="documents/bulletinboard.pdf">Newsletter</a>
+          <li>
+            <a class="olli" href="http://olliatauburn.org/documents/bulletinboard.pdf">Newsletter</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="calendar">Calendar</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="contact">Contact Us</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="about">About Us</a>
           </li>
         </ul>
@@ -101,14 +152,14 @@
         <a href="documents/university_privileges.pdf">University Privileges</a>
         <a href="downloadingdocs.htm">Downloading Documents</a>
         <a href="documents/olli_faq.pdf">FAQ</a>
-        <a href="https://tedolliau.wordpress.com/" target="new">
+        <a href="http://tedolliau.wordpress.com/" target="new">
           The Best of &nbsp;<strong>
             <span style="color: #ff0000; background-color: #FFF; padding: 1px 5px 1px 5px;">TED</span>
           </strong>
         </a>
         <a href="writingourlives.htm">Writing Our Lives Sampler</a>
         <div class="orange-bar">&nbsp;</div>
-        <a href="https://www.auburn.edu/outreach">University Outreach</a>
+        <a href="http://www.auburn.edu/outreach">University Outreach</a>
         <div class="orange-bar">&nbsp;</div>
         <div align="center">
           <a href="https://www.facebook.com/OLLIatAuburn" target="new">
@@ -123,7 +174,7 @@
             <img src="images/givebutton.png" class="img-responsive" alt="Giving to OLLI"/>
           </a>
           <br/>
-          <a href="https://usm.maine.edu/olli/national/" target="new">
+          <a href="http://usm.maine.edu/olli/national/" target="new">
             <img class="img-responsive" src="images/ollilogo.png" alt="OLLI"/>
           </a>
         </div>
@@ -134,34 +185,71 @@
     </div>-->
 
     <!--This is the "MAIN" BODY-->
+    
+    
+    
     <div class="content-division col-lg-9" id="wrapper" role="main">
-      <div class="row about">
-        <h2>What are we?</h2>
-        <div class="about-info">
-          OLLI at Auburn is a membership program for learning in retirement for senior adults, 50 years and older.
+      <div>
+        <h2 style="text-align: center">Who are we?</h2>
+      </div>
+
+      <div class="olliBoardParent">
+        <div class="olliBoardPicture">
+          <img src="http://www.olliatauburn.org/images/OLLI-board.png" align="middle" style="width:100%"></img>
+        </div><br /><br />
+        <div class="row about">
+          <h2>What are we?</h2>
+          <div class="about-info" style="width:100%">
+            OLLI at Auburn is a membership program for learning in retirement for senior adults, 50 years and older.
+          </div>
+        </div><br />
+        <div class="row committee" style="margin-left:0px; margin-right:0px;">
+          <h2>Executive Committee, 2014-2015</h2>
+          <ul>
+            <li>
+              Emily Kling <span class="muted">President</span>
+            </li>
+            <li>
+              John Neubauer <span class="muted">Vice President</span>
+            </li>
+            <li>
+              Virginia O'Leary <span class="muted">Secretary</span>
+            </li>
+            <li>
+              Jane Brown <span class="muted">Treasury</span>
+            </li>
+            <li>
+              Linda Shook <span class="muted">Director</span>
+            </li>
+          </ul>
+        </div><br />
+
+        <div class="row join-info" style="margin-left:0px; margin-right:0px;">
+          <h2>You can join. Sound interesting?</h2>
+          
+          There are no formal requirements for membership other than an interest in continued learning. One need not be fully retired, nor are there academic or experience requirements.
         </div>
       </div>
 
-      <div class="row staff">
-        <h2>Who are we?</h2>
+      <div class="row staff" style="margin-top: 35px;">
         <div class="staff-member">
-          <img src="https://olliatauburn.org/images/Linda_Shook.jpg"/>
           <div class="staff-member-info">
+            <img style="height: 100%; margin: 0 !important;" src="http://olliatauburn.org/images/Linda_Shook.jpg"/>
             <h3>Linda Shook</h3>
             <h4>OLLI Director</h4>
-            <p>
+            <p class="staffText">
               Linda Shook holds a M.Ed. in Adult Education from Auburn University. She received a B.A. in public relations with a minor in human resource management from The University of Alabama.
               Currently, she serves as the director for the Osher Lifelong Learning Institute at Auburn University (OLLI at Auburn). She has been affiliated with OLLI at Auburn since 2008. Prior to
               this, she worked for non-profit organizations and has many years of experience in volunteer management.
             </p>
           </div>
-        </div>
+        </div><br />
         <div class="staff-member">
-          <img src="https://olliatauburn.org/images/Barbara_Daron.jpg"/>
           <div class="staff-member-info">
+            <img style="height: 100%; margin: 0 !important;" src="http://olliatauburn.org/images/Barbara_Daron.jpg"/>
             <h3>Barbara Daron</h3>
             <h4>OLLI Coordinator</h4>
-            <p>
+            <p class="staffText">
               Barbara Daron holds a M.Ed. in Reading Education from Auburn University Montgomery and received a B.S. in Education from Auburn University. Currently, she serves as the OLLI at Auburn
               Coordinator. She has been employed at Auburn University since 2012 and has been affiliated with the University since 1992. Prior to working at Auburn, Barbara taught elementary school in
               rural Alabama and worked with many at-risk students.
@@ -170,31 +258,7 @@
         </div>
       </div>
 
-      <div class="row committee" style="margin-left:0px; margin-right:0px;">
-        <h2>Executive Committee, 2014-2015</h2>
-        <ul>
-          <li>
-            Emily Kling <span class="muted">President</span>
-          </li>
-          <li>
-            John Neubauer <span class="muted">Vice President</span>
-          </li>
-          <li>
-            Virginia O'Leary <span class="muted">Secretary</span>
-          </li>
-          <li>
-            Jane Brown <span class="muted">Treasury</span>
-          </li>
-          <li>
-            Linda Shook <span class="muted">Director</span>
-          </li>
-        </ul>
-      </div>
 
-      <div class="row join-info" style="margin-left:0px; margin-right:0px;">
-        <h2>You can join. Sound interesting?</h2>
-        <p>There are no formal requirements for membership other than an interest in continued learning. One need not be fully retired, nor are there academic or experience requirements.</p>
-      </div>
     </div>
 
     <!--Part of the page that is under the "main" body-->
@@ -213,12 +277,12 @@
                 Twitter
               </div>
             </a>
-            <a href="https://tedolliau.wordpress.com/">
+            <a href="http://tedolliau.wordpress.com/">
               <div class="col-md-2 links-ted">
                 TED
               </div>
             </a>
-            <a href="https://osher.net">
+            <a href="http://osher.net">
               <div class="col-md-2 links-olli">
                 OLLI
               </div>
@@ -243,7 +307,7 @@
         <script type="text/javascript">
           emailE = 'auburn.edu'; emailE = ('olli' + '@' + emailE); document.write("<a href='mailto:" + emailE + "'>" + emailE + "</a>");
         </script>
-        | <a href="https://www.auburn.edu/privacy">Privacy</a> | <a href="https://www.auburn.edu/oit/it_policies/copyright_regulations.php">
+        | <a href="http://www.auburn.edu/privacy">Privacy</a> | <a href="http://www.auburn.edu/oit/it_policies/copyright_regulations.php">
           Copyright &copy; 2006&ndash;<script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
         </a>
       </div>
@@ -251,3 +315,62 @@
   </div>
 </div>
 <!-- /container -->
+
+<!--This is supposed to be an icon that allows the user to go to the top of the page with a click, but it is not working properly-->
+<!--<div class="to-top" style="display: none;">
+  <a href="#top"></a>
+</div>-->
+
+
+
+<!-- OLD CODE
+<div class="row about">
+  <h2>What are we?</h2>
+  <div class="about-info">
+    <p>OLLI at Auburn is a membership program for learning in retirement for senior adults, 50 years and older.</p>
+  </div>
+</div>
+
+<div class="row staff">
+  <h2>Who are we?</h2>
+  <div class="staff-member">
+    <img src="http://olliatauburn.org/images/Linda_Shook.jpg"/>
+    <div class="staff-member-info">
+      <h3>Linda Shook</h3>
+      <h4>OLLI Director</h4>
+      <p>
+        Linda Shook holds a M.Ed. in Adult Education from Auburn University. She received a B.A. in public relations with a minor in human resource management from The University of Alabama.
+        Currently, she serves as the director for the Osher Lifelong Learning Institute at Auburn University (OLLI at Auburn). She has been affiliated with OLLI at Auburn since 2008. Prior to
+        this, she worked for non-profit organizations and has many years of experience in volunteer management.
+      </p>
+    </div>
+  </div>
+  <div class="staff-member">
+    <img src="http://olliatauburn.org/images/Barbara_Daron.jpg"/>
+    <div class="staff-member-info">
+      <h3>Barbara Daron</h3>
+      <h4>OLLI Coordinator</h4>
+      <p>
+        Barbara Daron holds a M.Ed. in Reading Education from Auburn University Montgomery and received a B.S. in Education from Auburn University. Currently, she serves as the OLLI at Auburn
+        Coordinator. She has been employed at Auburn University since 2012 and has been affiliated with the University since 1992. Prior to working at Auburn, Barbara taught elementary school in
+        rural Alabama and worked with many at-risk students.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row committee">
+  <h2>Executive Committee, 2014-2015</h2>
+  <ul>
+    <li>Emily Kling <span class="muted">President</span></li>
+    <li>John Neubauer <span class="muted">Vice President</span></li>
+    <li>Virginia O'Leary <span class="muted">Secretary</span></li>
+    <li>Jane Brown <span class="muted">Treasury</span></li>
+    <li>Linda Shook <span class="muted">Director</span></li>
+  </ul>
+</div>
+
+<div class="row join-info">
+  <h2>You can join. Sound interesting?</h2>
+  <p>There are no formal requirements for membership other than an interest in continued learning. One need not be fully retired, nor are there academic or experience requirements.</p>
+</div>-->

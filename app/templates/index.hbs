@@ -2,6 +2,21 @@
 <script src="assets/vendor.js"></script>
 <script src="assets/jolli.js"></script>
 
+<style>
+  .nav {
+  padding: 0 !important;
+  }
+  .nav li {
+  background: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+  .content-division {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+</style>
+
 <div class="container">
   <!--div that contains the HEADER and NAVBAR-->
   <div id="top" class="row header-wrap">
@@ -51,23 +66,23 @@
         Navigate to...<span>&nbsp;</span>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav" style="width: 100%">
-          <li style="width: 16.6%">
+        <ul class="nav navbar-nav" style="width: 100%; text-align: center;">
+          <li>
             <a class="olli" href="donate">Donate</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="courses">Courses</a>
           </li>
-          <li style="width: 16.6%">
-            <a class="olli" href="documents/bulletinboard.pdf">Newsletter</a>
+          <li>
+            <a class="olli" href="http://olliatauburn.org/documents/bulletinboard.pdf">Newsletter</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="calendar">Calendar</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="contact">Contact Us</a>
           </li>
-          <li style="width: 16.6%">
+          <li>
             <a class="olli" href="about">About Us</a>
           </li>
         </ul>
@@ -132,8 +147,8 @@
         <ul>
           <li class="event">
             <div class="event-date">
-              <div class="event-date-month">OCT</div>
-              <div class="event-date-day">2</div>
+              <div class="event-date-month" style="float:left;">OCT</div> &nbsp;
+              <span class="event-date-day">2</span>
             </div>
             <div class="event-details">
               <a class="event-details-name"
@@ -147,8 +162,8 @@
           </li>
           <li class="event">
             <div class="event-date">
-              <div class="event-date-month">OCT</div>
-              <div class="event-date-day">8</div>
+              <div class="event-date-month" style="float:left;">OCT</div> &nbsp;
+              <span class="event-date-day">8</span>
             </div>
             <div class="event-details">
               <a class="event-details-name"
@@ -157,7 +172,7 @@
                 Brown Bag Lunch and Learn
               </a>
               <div class="event-details-location">Clarion Inn &amp; Suites, Ballroom CD (2nd Floor)</div>
-              <div class="event-details-time">12n - 2pm</div>
+              <div class="event-details-time">12pm - 2pm</div>
             </div>
           </li>
         </ul>
@@ -168,9 +183,9 @@
       <div class="col-md-6 carousel" id="second">
         <div class="carousel-wrap">
           <div class="carousel-item">
-            <img class="carousel-item-img" src="https://olliatauburn.org/images/slideshow/1.jpg"/>
+            <img class="carousel-item-img" src="http://olliatauburn.org/images/slideshow/1.jpg"/>
             <div class="carousel-item-description">
-              <a href="/join" class="carousel-item-description-header btn join-btn">Join OLLI at Auburn</a>
+              <a href="/join" class="carousel-item-description-header btn join-btn" style="margin-top: 0; word-wrap: break-word;"><p><strong>Join OLLI at Auburn</strong></p></a>
               <div class="carousel-item-description-body">
                 Become a member and get back into academia. <br /> Remind your mind.
               </div>
