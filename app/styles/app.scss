@@ -45,7 +45,7 @@ iframe {border:none!important;}
 
 /**********Main Layout Divs and Elements********/
 .content-area{background:#fff!important;overflow:hidden!important;position:relative}
-.content-division{background:#fff!important;overflow:hidden!important;padding:0px 0px 10px 0px!important; border-left: 0px solid #d7d7d7!important; margin-left: 0px!important;}
+.content-division{background:#fff!important;overflow:hidden!important;padding:0px 0px 10px 0px!important; border-left: 0px solid #d7d7d7!important; margin-left: 0px!important; float: right; width: 80% !important;}
 .breadcrumb{ display:inline-block!important;background:transparent!important;padding:0}
 ul.breadcrumb li{background:0!important;padding:0}
 .page-header {padding-bottom: 5px!important; margin: 0px!important; border-bottom: none!important;}
@@ -100,7 +100,7 @@ input.search-field{border-radius:0!important;font-size:12px!important;line-heigh
 .menu-icon:hover{cursor:pointer}
 .menu-icon>i{padding:10px}
 .orange-bar{background:#f68026!important;display:block!important;font-size:1px!important;height:2px!important;margin:20px 10px}
-.sidebar{background:#496e9c!important;color:#fff!important;display:none!important;padding:0}
+.sidebar{text-align:center; background:#496e9c!important;color:#fff!important;display:none!important;padding:0}
 .sidebar p.heading{background:#03244d!important;font-size:16px!important;margin:0!important;padding:5px!important;position:relative!important;text-align:center}
 .sidebar p.heading a{padding:0!important;position:absolute!important;right:5px!important;top:4px!important;white-space:nowrap}
 .sidebar a{color:#fff!important;display:block!important;padding:8px 15px}
@@ -310,7 +310,7 @@ hr.ecdi {
 .row-offcanvas-left .sidebar-offcanvas {left: -210px!important; /* 60px * 3.5 = very small phones like 240x320 HTC Wildfire */}
 .row-offcanvas-right.active {right: 210px!important; /* 60px * 3.5 = very small phones like 240x320 HTC Wildfire */}
 .row-offcanvas-left.active {left: 210px!important; /* 60px * 3.5 = very small phones like 240x320 HTC Wildfire */}
-.sidebar-offcanvas {position: absolute!important; top: 0!important;}
+.sidebar-offcanvas {top: 0!important;}
 
 
 @media (max-width: 319px) {
