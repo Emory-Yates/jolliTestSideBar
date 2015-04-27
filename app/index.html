@@ -61,6 +61,13 @@
                 $(this).tab('show');
             })
         });
+        function urlencode(obj) {
+            var txt=obj.getAttribute("href");
+            //var encodetxt=encodeURI(txt);
+            var encodetxt=encodeURIComponent(txt);
+            window.open(txt,"_self");
+        }
+</script>
     </script>
     <!--Google Analytics-->
     <script>

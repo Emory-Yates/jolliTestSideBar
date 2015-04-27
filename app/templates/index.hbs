@@ -68,19 +68,18 @@
      <!--This is the SIDEBAR. It doesn't function properly -->
         <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas" style="display: block !important; left: initial !important; float: left; width: 20%; margin-left: 0px;">
             <div class="sidebar-content accordion">
-                <a class="upLink" href="">OLLI Homepage</a>
+                <a class="olli upLink" href="">LINKS</a>
                 <a class="olli" href="about">About Us</a>
                 <a class="olli" href="courses">Courses</a>
-                <a class="olli" href="http://olliatauburn.org/documents/bulletinboard.pdf">Newsletter</a>
+                <a class="olli" href="bulletinboard.pdf" onclick="urlencode(this); return false;">Newsletter</a>
                 <a class="olli" href="calendar">Calendar</a>
                 <a class="olli" href="donate">Donate</a>
                 <a class="olli" href="contact">Contact Us</a>
-                <a href="https://tedolliau.wordpress.com/" target="new">The Best of &nbsp;
-                <strong>
-                    <span style="color: #ff0000; background-color: #FFF; padding: 1px 5px 1px 5px;">TED</span>
-                </strong>
+                <a class="olli" href="contact">Social Media Links</a>
+                <a class="olli" href="writingourlives">Writing Our Lives Sampler</a>
+                <a href="http://nrc.northwestern.edu/" target="new">
+                        <img class="img-responsive" src="ollilogo.png" alt="OLLI" />
                 </a>
-                <a href="writingourlives.htm">Writing Our Lives Sampler</a>
                 <div class="orange-bar">&nbsp;</div>
                 <a href="https://www.auburn.edu/outreach">University Outreach</a>
                 <div class="orange-bar">&nbsp;</div>
@@ -93,13 +92,10 @@
                         <img class="img-responsive" src="twitter.png" alt="Follow @olliatauburn" />
                     </a>
                     <br />
-                    <a href="giving" target="new">
+                    <!--<a href="giving" target="new">
                         <img src="givebutton.png" class="img-responsive" alt="Giving to OLLI" />
                     </a>
-                    <br />
-                    <a href="https://usm.maine.edu/olli/national/" target="new">
-                        <img class="img-responsive" src="ollilogo.png" alt="OLLI" />
-                    </a>
+                    <br />-->
                 </div>
                 <br />
                 <br />
@@ -111,7 +107,7 @@
         <div class="content-division col-lg-9" id="wrapper" role="main">
             <div id="first">
                 <h2>
-                    <a href="#">Upcoming Events</a>
+                    <a href="calendar">Upcoming Events</a>
                 </h2>
                 <ul>
                     <li class="event">
@@ -123,7 +119,7 @@
                         <div class="event-details">
                             <a class="event-details-name"
                                 href="#"
-                                target="_blank">OLLI Back to School Event
+                                target="_blank" onclick="urlencode(this); return false;">OLLI Back to School Event
                             </a>
                             <div class="event-details-location">Jule Collins Smith Museum of Fine Arts</div>
                             <div class="event-details-time">6pm - 8pm</div>
@@ -138,14 +134,14 @@
                         <div class="event-details">
                             <a class="event-details-name"
                                 href="#"
-                                target="_blank">Brown Bag Lunch and Learn
+                                target="_blank" onclick="urlencode(this); return false;">Brown Bag Lunch and Learn
                             </a>
                             <div class="event-details-location">Clarion Inn &amp; Suites, Ballroom CD (2nd Floor)</div>
                             <div class="event-details-time">12pm - 2pm</div>
                         </div>
                     </li>
                 </ul>
-                <a class="events-more" href="#">More events</a>
+                <a class="events-more" href="calendar">More events</a>
             </div>
 
             <div class="col-md-6 carousel" id="second">
@@ -153,11 +149,14 @@
                     <div class="carousel-item">
                         <img class="carousel-item-img" src="OlliHomePicture.jpg" />
                         <div class="carousel-item-description">
-                            <a href="/join" class="carousel-item-description-header btn join-btn" style="margin-top: 0; word-wrap: break-word;">
+                            <!--<a href="join" class="carousel-item-description-header btn join-btn" style="margin-top: 0; word-wrap: break-word;">
                                 <p>
-                                    <strong>Join OLLI at Auburn</strong>
+                                    <strong>Click here to Join OLLI at Auburn</strong>
                                 </p>
-                            </a>
+                            </a>-->
+                            <form action="join" style="height: 30px;">
+                              <input type="submit" value="Click Here to Join OLLI at Auburn" style="width: 80%; height: 35px; background-color: Transparent; font-size: small; font-weight: bold; white-space: normal;">
+                            </form>
                             <div class="carousel-item-description-body">
                                 Become a member and get back into academia.
                                 <br />

@@ -13,6 +13,7 @@ Router.map(function() {
   this.route("join");
   this.route("calendar");
   this.route("donate");
+  this.route("writingourlives");
 });
 
 export default Router;

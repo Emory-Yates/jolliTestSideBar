@@ -1,0 +1,11 @@
+If the live Auburn Olli website is not displaying pictures anymore, then follow these steps:
+
+1. Go to app/templates folder
+2. Open every .hbs file
+3. Search (CTRL F) for the type of pictures/files not appearing (pdf, png, gif, etc.)
+4. Add "(website name goes here)/documents/" in front of every picture/file you find. (Example: If the website name is "http://olliatauburn.org" and the file name is "example.png", then "example.png" should be replaced with "http://olliatauburn.org/documents/example.png")
+5. No more steps, you're finished! Just save the changes.
+
+If you have any questions, please email me at ldm0007@yahoo.com or ldm0007@auburn.edu
+
+- Lloyd Moore
