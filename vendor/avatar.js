@@ -104,7 +104,7 @@
 
     // # Keywords
     var register = [
-        'register', 'join', 'member', 'members'
+        'register', 'join', 'member', 'members', 'joins', 'joining', 'become'
       ],
       events = [
         'event', 'events'
@@ -116,7 +116,7 @@
         'when', 'where'
       ],
       faq = [
-        'faq', 'what', 'how', 'much'
+        'faq', 'what', 'how', 'much', 'question', 'questions', 'ask'
       ],
       garbage = [
         'help', 'me', 'my', 'the'
@@ -125,19 +125,19 @@
         'about', 'information', 'informations', 'info', 'infoes', 'infos'
       ],
       newsletter = [
-        'newsletter', 'newletters', 'news'
+        'newsletter', 'newletters', 'news', 'update', 'updates'
       ],
       calendar = [
-       'calendar', 'event', 'events', 'meeting', 'meetings', 'appointment', 'appointments'
+       'calendar', 'event', 'events', 'meeting', 'meetings', 'appointment', 'appointments', 'time', 'date', 'schedule', 'place', 'location', 'locations', 'located', 'at'
       ],
       donate = [
-        'donate', 'give', 'donation', 'donations' 
+        'donate', 'give', 'donation', 'donations', 'giving', 'money', 'funds', 'fund', 'support', 'cash' 
       ],
       contact = [
         'contact', 'info', 'contacts', 'people', 'email', 'emails', 'facebook', 'twitter', 'phone', 'number', 'phonenumber'
       ],
       writingourlives = [
-        'file', 'files', 'download', 'downloads', 'paper', 'papers'
+        'file', 'files', 'download', 'downloads', 'paper', 'papers', 'write', 'writing', 'document', 'documents'
       ],
       input
 
