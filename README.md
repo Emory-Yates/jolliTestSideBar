@@ -81,7 +81,7 @@ To deploy the site to [Heroku](olliatauburn.herokuapp.com):
 
 1. Commit and push your latest changes to the master branch:
 ````
-git add .
+git add -A
 git commit -m "Describe your updates."
 git push
 ````
