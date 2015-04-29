@@ -11,10 +11,6 @@
   margin: 0 !important;
   padding: 0 !important;
   }
-  #content {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
 </style>
 
 <div class="container">
@@ -56,17 +52,18 @@
       </div>
     </header>
 
+    <div id="customNav" class="navbar hidden-print" role="navigation">
+    </div>
+
     <!--Supposed to be a shortcut for the navbar. Don't worry about this.-->
     <a href="#content" class="skip">Skip to Main Content</a>
-
-
   </div>
 
   <!--This all of the PAGE CONTENT containing the sidebar and main body -->
   <div id="content wrapper" class="row row-offcanvas row-offcanvas-left content-area" style="margin-top: 30px;">
 
      <!--This is the SIDEBAR. It doesn't function properly -->
-        <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas" style="text-align: left !important; display: block !important; left: initial !important; float: left; width: 20%; margin-left: 0px;">
+        <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas">
             <div class="sidebar-content accordion">
                 <a class="olli upLink" href="">LINKS</a>
                 <a class="olli" href="about">About Us</a>
@@ -82,21 +79,6 @@
                 </a>
                 <div class="orange-bar">&nbsp;</div>
                 <a href="https://www.auburn.edu/outreach">University Outreach</a>
-                <div class="orange-bar">&nbsp;</div>
-                <div align="center">
-                    <a href="https://www.facebook.com/OLLIatAuburn" target="new">
-                        <img class="img-responsive" src="facebook2.png" alt="Like us on Facebook" />
-                    </a>
-                    <br />
-                    <a href="https://twitter.com/olliatauburn" target="new">
-                        <img class="img-responsive" src="twitter.png" alt="Follow @olliatauburn" />
-                    </a>
-                    <br />
-                    <!--<a href="giving" target="new">
-                        <img src="givebutton.png" class="img-responsive" alt="Giving to OLLI" />
-                    </a>
-                    <br />-->
-                </div>
                 <br />
                 <br />
                 <br />

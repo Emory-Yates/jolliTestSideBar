@@ -14,12 +14,6 @@
             margin: 0 !important;
             padding: 0 !important;
         }
-
-    .content-division
-    {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
 </style>
 
 <div class="container">
@@ -61,17 +55,18 @@
             </div>
         </header>
 
+        <div id="customNav" class="navbar hidden-print" role="navigation">
+        </div>
+
         <!--Supposed to be a shortcut for the navbar. Don't worry about this.-->
         <a href="#content" class="skip">Skip to Main Content</a>
-
-
     </div>
 
     <!--This all of the PAGE CONTENT containing the sidebar and main body -->
     <div id="content wrapper" class="row row-offcanvas row-offcanvas-left content-area" style="margin-top: 30px;">
 
         <!--This is the SIDEBAR. It doesn't function properly -->
-        <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas" style="text-align: left !important; display: block !important; left: initial !important; float: left; width: 20%; margin-left: 0px;">
+        <div id="sidebar" class="hidden-print col-lg-3 sidebar sidebar-offcanvas">
             <div class="sidebar-content accordion">
                 <a class="olli upLink" href="">LINKS</a>
                 <a class="olli" href="about">About Us</a>
@@ -87,21 +82,6 @@
                 </a>
                 <div class="orange-bar">&nbsp;</div>
                 <a href="https://www.auburn.edu/outreach">University Outreach</a>
-                <div class="orange-bar">&nbsp;</div>
-                <div align="center">
-                    <a href="https://www.facebook.com/OLLIatAuburn" target="new">
-                        <img class="img-responsive" src="facebook2.png" alt="Like us on Facebook" />
-                    </a>
-                    <br />
-                    <a href="https://twitter.com/olliatauburn" target="new">
-                        <img class="img-responsive" src="twitter.png" alt="Follow @olliatauburn" />
-                    </a>
-                    <br />
-                    <!--<a href="giving" target="new">
-                        <img src="givebutton.png" class="img-responsive" alt="Giving to OLLI" />
-                    </a>
-                    <br />-->
-                </div>
                 <br />
                 <br />
                 <br />
@@ -130,13 +110,13 @@
                 <p>
                     <img class="img-responsive" src="writingourlives_clip_image004.jpg" alt="frandsen"></p>
                 <ul>
-                    <li><a href="WOL Webpage Curator Opening page with photo.pdf" onclick="urlencode(this); return false;">Writing Our Lives Curator page</a></li>
-                    <li><em><a href="Autrey - Pappaw's Razor - Web.pdf" target="new" onclick="urlencode(this); return false;">"Pappaw's Razor"</a></em><a href="Autrey - Pappaw's Razor - Web.pdf" onclick="urlencode(this); return false;"> by Ken Autrey</a></li>
-                    <li><em><a href="Cleveland - Mrs  Livingood - Web.pdf" target="new" onclick="urlencode(this); return false;">"Mrs. Livingood"</a></em><a href="Cleveland - Mrs  Livingood - Web.pdf" onclick="urlencode(this); return false;"> by Wendy Cleveland</a></li>
-                    <li><em><a href="Corbin - Nancy's Legacy - Web.pdf" target="new" onclick="urlencode(this); return false;">"Nancy's Legacy"</a></em><a href="Corbin - Nancy's Legacy - Web.pdf" onclick="urlencode(this); return false;"> by Betty Corbin</a></li>
-                    <li><em><a href="Frandsen - Lab Notes.pdf" onclick="urlencode(this); return false;">"Lab Notes"</a></em><a href="Frandsen - Lab Notes.pdf" onclick="urlencode(this); return false;"> by John Frandsen</a></li>
-                    <li><em><a href="Williams - Last Wishes.pdf" onclick="urlencode(this); return false;">"Last Wishes"</a></em><a href="Williams - Last Wishes.pdf" onclick="urlencode(this); return false;"> by Liz Williams</a></li>
-                    <li><em><a href="Edwards - The Blue Cream Pitcher.pdf" onclick="urlencode(this); return false;">"The Blue Cream Pitcher"</a></em><a href="Edwards - The Blue Cream Pitcher.pdf"onclick="urlencode(this); return false;"> by Virginia Mitchell Edwards</a></li>
+                    <li><a href="WOL_Webpage_Curator_Opening_page_with_photo.pdf">Writing Our Lives Curator page</a></li>
+                    <li><em><a href="Autrey-Pappaw's_Razor-Web.pdf" target="new">"Pappaw's Razor"</a></em><a href="Autrey-Pappaw's_Razor-Web.pdf"> by Ken Autrey</a></li>
+                    <li><em><a href="Cleveland-Mrs_Livingood-Web.pdf" target="new">"Mrs. Livingood"</a></em><a href="Cleveland-Mrs_Livingood-Web.pdf"> by Wendy Cleveland</a></li>
+                    <li><em><a href="Corbin-Nancy's_Legacy-Web.pdf" target="new">"Nancy's Legacy"</a></em><a href="Corbin-Nancy's_Legacy-Web.pdf"> by Betty Corbin</a></li>
+                    <li><em><a href="Frandsen-Lab_Notes.pdf">"Lab Notes"</a></em><a href="Frandsen-Lab_Notes.pdf"> by John Frandsen</a></li>
+                    <li><em><a href="Williams-Last_Wishes.pdf">"Last Wishes"</a></em><a href="Williams-Last_Wishes.pdf"> by Liz Williams</a></li>
+                    <li><em><a href="Edwards-The_Blue_Cream_Pitcher.pdf">"The Blue Cream Pitcher"</a></em><a href="Edwards-The_Blue_Cream_Pitcher.pdf"> by Virginia Mitchell Edwards</a></li>
                 </ul>
             </div>
             <!-- InstanceEndEditable -->

@@ -41,7 +41,7 @@
     }
 
     if (e.keyCode === 13) {
-      var input = bar.children[1].value,
+      var input = bar.children[1].value.toLowerCase(),
         which = matches(input)
 
       console.log('input: ' + input)
@@ -53,18 +53,37 @@
         window.location.href = '/join'
         break;
       case 'events':
-        window.location.href = '/events'
+        window.location.href = '/calendar'
         break;
       case 'courses':
         window.location.href = '/courses'
         break;
       case 'faq':
-        window.location.href = '/faq'
+        window.location.href = '/faqs'
+        break;
+      case 'about':
+        window.location.href = '/about'
+        break;
+      case 'newsletter':
+        window.location.href = '/newsletter'
+        break;
+      case 'calendar':
+        window.location.href = '/calendar'
+        break;
+      case 'donate':
+        window.location.href = '/donate'
+        break;
+      case 'contact':
+        window.location.href = '/contact'
+        break;
+      case 'writingourlives':
+        window.location.href = '/writingourlives'
         break;
       default:
-        bar.children[0].innerHTML = 'I didn\'t get that.'
-        bar.children[1].style.outline = '#f00'
-        bar.children[1].value = ''
+        bar.children[0].innerHTML = 'I didn\'t get that.';
+        bar.children[1].style.outline = '#f00';
+        bar.children[1].value = '';
+        break;
       }
     }
   }
@@ -85,13 +104,13 @@
 
     // # Keywords
     var register = [
-        'register', 'join', 'member'
+        'register', 'join', 'member', 'members'
       ],
       events = [
-        'event'
+        'event', 'events'
       ],
       courses = [
-        'course', 'class', 'lecture'
+        'course', 'courses', 'class', 'classes', 'lecture', 'lectures'
       ],
       eventsOrCourses = [
         'when', 'where'
@@ -102,13 +121,31 @@
       garbage = [
         'help', 'me', 'my', 'the'
       ],
+      about = [
+        'about', 'information', 'informations', 'info', 'infoes', 'infos'
+      ],
+      newsletter = [
+        'newsletter', 'newletters', 'news'
+      ],
+      calendar = [
+       'calendar', 'event', 'events', 'meeting', 'meetings', 'appointment', 'appointments'
+      ],
+      donate = [
+        'donate', 'give', 'donation', 'donations' 
+      ],
+      contact = [
+        'contact', 'info', 'contacts', 'people', 'email', 'emails', 'facebook', 'twitter', 'phone', 'number', 'phonenumber'
+      ],
+      writingourlives = [
+        'file', 'files', 'download', 'downloads', 'paper', 'papers'
+      ],
       input
 
     // # Weights
-    , REGISTER_WEIGHT = 2, EVENTS_WEIGHT = 4, COURSES_WEIGHT = 3, EVENTS_OR_COURSES_WEIGHT = 5, FAQ_WEIGHT = 1
+    , REGISTER_WEIGHT = 2, EVENTS_WEIGHT = 4, COURSES_WEIGHT = 3, EVENTS_OR_COURSES_WEIGHT = 5, FAQ_WEIGHT = 1, ABOUT_WEIGHT = 3, NEWSLETTER_WEIGHT = 2, CALENDAR_WEIGHT = 4, DONATE_WEIGHT = 3, CONTACT_WEIGHT = 3, WRITINGOURLIVES_WEIGHT = 3
 
     // # Point counts
-    , registerPoints = 0, eventsPoints = 0, coursesPoints = 0, faqPoints = 0
+    , registerPoints = 0, eventsPoints = 0, coursesPoints = 0, faqPoints = 0, aboutPoints = 0, newsletterPoints = 0, calendarPoints = 0, donatePoints = 0, contactPoints = 0, writingourlivesPoints = 0
 
     for (var g in garbage) {
       if (i.indexOf(g) !== -1) {
@@ -150,29 +187,102 @@
       }
     }
 
+    for (var f in about) {
+      if (input.indexOf(about[f]) !== -1) {
+        aboutPoints += ABOUT_WEIGHT
+      }
+    }
+
+    for (var f in newsletter) {
+      if (input.indexOf(newsletter[f]) !== -1) {
+        newsletterPoints += NEWSLETTER_WEIGHT
+      }
+    }
+
+    for (var f in calendar) {
+      if (input.indexOf(calendar[f]) !== -1) {
+        calendarPoints += CALENDAR_WEIGHT
+      }
+    }
+
+    for (var f in donate) {
+      if (input.indexOf(donate[f]) !== -1) {
+        donatePoints += DONATE_WEIGHT
+      }
+    }
+
+    for (var f in contact) {
+      if (input.indexOf(contact[f]) !== -1) {
+        contactPoints += CONTACT_WEIGHT
+      }
+    }
+
+    for (var f in writingourlives) {
+      if (input.indexOf(writingourlives[f]) !== -1) {
+        writingourlivesPoints += WRITINGOURLIVES_WEIGHT
+      }
+    }
+
+
     console.log('registerPoints: ' + registerPoints)
     console.log('eventsPoints: ' + eventsPoints)
     console.log('coursesPoints: ' + coursesPoints)
     console.log('faqPoints: ' + faqPoints)
+    console.log('aboutPoints: ' + aboutPoints)
+    console.log('newsletterPoints: ' + newsletterPoints)
+    console.log('calendarPoints: ' + calendarPoints)
+    console.log('donatePoints: ' + donatePoints)
+    console.log('contactPoints: ' + contactPoints)
+    console.log('writingourlivesPoints: ' + writingourlivesPoints)
 
-    switch (Math.max(
-      registerPoints, eventsPoints, coursesPoints, faqPoints
-    )) {
+    var isZero = false;
+    if (registerPoints == 0 && eventsPoints == 0 && coursesPoints == 0 && faqPoints == 0 && aboutPoints == 0 && newsletterPoints == 0 && calendarPoints == 0 && donatePoints == 0 && contactPoints == 0 && writingourlivesPoints == 0)
+    {
+      isZero = true;
+    }
 
-    case registerPoints:
-      return 'register'
 
-    case eventsPoints:
-      return 'events'
+    if (isZero) {
+        return 'unknown'
+    }
+    else {
+        switch (Math.max(
+        registerPoints, eventsPoints, coursesPoints, faqPoints, aboutPoints, newsletterPoints, calendarPoints, donatePoints, contactPoints, writingourlivesPoints
+      )) {
 
-    case coursesPoints:
-      return 'courses'
+            case registerPoints:
+                return 'register'
 
-    case faqPoints:
-      return 'faq'
+            case eventsPoints:
+                return 'events'
 
-    default:
-      return 'unknown'
+            case coursesPoints:
+                return 'courses'
+
+            case faqPoints:
+                return 'faq'
+
+            case aboutPoints:
+                return 'about'
+
+            case newsletterPoints:
+                return 'newsletter'
+
+            case calendarPoints:
+                return 'calendar'
+
+            case donatePoints:
+                return 'donate'
+
+            case contactPoints:
+                return 'contact'
+
+            case writingourlivesPoints:
+                return 'writingourlives'
+
+            default:
+                return 'unknown'
+        }
     }
 
 
