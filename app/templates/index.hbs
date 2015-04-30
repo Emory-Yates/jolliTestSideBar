@@ -11,6 +11,48 @@
   margin: 0 !important;
   padding: 0 !important;
   }
+  ul {
+      margin-bottom: 10px !important;
+      padding: 0 !important;
+  }
+  ul li {
+    background: none !important;
+    padding-top: 10px;
+    display: flex !important;
+  }
+  ul li .event-date{
+      background: url(https://www.auburn.edu/template/styles/images/css-sprite.png) -172px 0 no-repeat !important;
+      display: inline-block;
+      float: left;
+      height: 50px;
+      vertical-align: top;
+      width: 38px;
+      margin: 3px 5px;
+      position: relative;
+  }
+  .event-details-name {
+      font-weight: bold;
+      color: black !important;
+  }
+  .event-date-month {
+      font-size: smaller;
+      font-weight: bold;
+  }
+  .event-details-time {
+    color: #dd550c !important;
+  }
+  .event-details-location {
+    color: #496e9c;
+  }
+  ul li .event-date .event-date-day {
+        padding-right: 10px;
+        text-align: center;
+  }
+  ul li .event-details{
+      float: left;
+      width: 60% !important;
+  }
+
 </style>
 
 <div class="container">
@@ -88,42 +130,95 @@
         <!--This is the "MAIN" BODY for the index page -->
         <div class="content-division col-lg-9" id="wrapper" role="main">
             <div id="first">
-                <h2>
+                <h3>
                     <a href="calendar">Upcoming Events</a>
-                </h2>
+                </h3>
                 <ul>
                     <li class="event">
                         <div class="event-date">
-                            <div class="event-date-month" style="float: left;">OCT</div>
+                            <div class="event-date-month" style="float: left;">MAY</div>
                             &nbsp;
-              <span class="event-date-day">2</span>
+                            <div class="event-date-day">6</div>
                         </div>
                         <div class="event-details">
-                            <a class="event-details-name"
-                                href="#"
-                                target="_blank" onclick="urlencode(this); return false;">OLLI Back to School Event
+                            
+                            <a class="event-details-name" href="#" target="_blank" onclick="urlencode(this); return false;">
+                              Brown Bag Lunch and Learn: VE Day with Paul Harris
                             </a>
-                            <div class="event-details-location">Jule Collins Smith Museum of Fine Arts</div>
-                            <div class="event-details-time">6pm - 8pm</div>
+                            <div class="event-details-time">
+                              <i class="icon-fixed-width"></i>
+                              12:00 - 2:00 pm
+                            </div>
+                            <div class="event-details-location">
+                              <i class="icon-fixed-width"></i>
+                              Ballroom CD, Clarion Inn & Suites
+                            </div>
                         </div>
                     </li>
                     <li class="event">
                         <div class="event-date">
-                            <div class="event-date-month" style="float: left;">OCT</div>
+                            <div class="event-date-month" style="float: left;">MAY</div>
                             &nbsp;
-              <span class="event-date-day">8</span>
+                        <div class="event-date-day">12</div>
                         </div>
                         <div class="event-details">
-                            <a class="event-details-name"
-                                href="#"
-                                target="_blank" onclick="urlencode(this); return false;">Brown Bag Lunch and Learn
+                            <a class="event-details-name" href="#" target="_blank" onclick="urlencode(this); return false;">
+                              Brown Bag Lunch and Learn: American Theatre Recital with the OLLI Theatre students
                             </a>
-                            <div class="event-details-location">Clarion Inn &amp; Suites, Ballroom CD (2nd Floor)</div>
-                            <div class="event-details-time">12pm - 2pm</div>
+                            <div class="event-details-time">
+                              <i class="icon-fixed-width"></i>
+                              11:45 am - 12:40 pm
+                            </div>
+                            <div class="event-details-location">
+                              <i class="icon-fixed-width"></i>
+                              Clarion Inn & Suites
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <div class="event-date">
+                            <div class="event-date-month" style="float: left;">MAY</div>
+                            &nbsp;
+                            <div class="event-date-day">14</div>
+                        </div>
+                        <div class="event-details">
+                            
+                            <a class="event-details-name" href="#" target="_blank" onclick="urlencode(this); return false;">
+                             OLLI Spring term classes end
+                            </a>
+                            <div class="event-details-time">
+                              <i class="icon-fixed-width"></i>
+                              8:30 am - 4:00 pm
+                            </div>
+                            <div class="event-details-location">
+                              <i class="icon-fixed-width"></i>
+                              Clarion Inn & Suites
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event">
+                        <div class="event-date">
+                            <div class="event-date-month" style="float: left;">MAY</div>
+                            &nbsp;
+                        <div class="event-date-day">18</div>
+                        </div>
+                        <div class="event-details">
+                            <a class="event-details-name" href="#" target="_blank" onclick="urlencode(this); return false;">
+                              OLLI Annual Meeting and Spring Social
+                            </a>
+                            <div class="event-details-time">
+                              <i class="icon-fixed-width"></i>
+                              9:30 - 11:30 am
+                            </div>
+                            <div class="event-details-location">
+                              <i class="icon-fixed-width"></i>
+                              Dance Floor, Clarion Inn & Suites
+                            </div>
                         </div>
                     </li>
                 </ul>
-                <a class="events-more" href="calendar">More events</a>
+                <br />
+                <a class="events-more" href="calendar" style="float:left; padding-top: 15px;">More events</a>
             </div>
 
             <div class="col-md-6 carousel" id="second">
